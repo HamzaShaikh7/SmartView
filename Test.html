@@ -3,17 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>One Day I Will Become one of the greate person of all time.</h1>
-    <br><br>
-    <p>Allah, oh my GOD please help me to achive all my goals</p>
-    <br><br>
-    <a href="https://www.google.com/" target="_main">GOOGLE</a>
-    <hr>
-    <img src="https://miro.medium.com/v2/resize:fit:1400/1*uWebaREGLTZgxEdPklTdpw.png" alt="Alexender The Greate">
-    <b><i><u>One of the Greate person</u></i></b>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
 
+            <div class="input_box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input_box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+
+            </div>
+
+            <div class="shift_timing">
+                <p>Shift :
+                    <label for="morning_shift_radio">
+                        <input type="radio" name="shift_radio" id="morning_shift_radio" value="morning" checked>Morning
+                    </label>
+                    <label for="afternoon_shift_radio">
+                        <input type="radio" name="shift_radio" id="afternoon_shift_radio" value="afternoon">Afternoon
+                    </label>
+                    <label for="night_shift_radio">
+                        <input type="radio" name="shift_radio" id="night_shift_radio" value="night">night
+                    </label>
+                </p>
+            </div>
+
+            <div class="office_location">
+                <label>
+                    Location
+                    <select>
+                        <option value="MUM">MUM</option>
+                        <option value="DEL">DEL</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="remember_me">
+                <label for="remember_me_checkbox">
+                    <input type="checkbox" id="remember_me_checkbox"> Remember me
+                    
+                    <a href="#" target="_main">Forget password</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="registration_line">
+                <p>Don't have an account
+                    <a href="#" target="_main">Registor here</a>
+                </p>
+            </div>
+
+
+        </form>
+    </div>
 </body>
 </html>
